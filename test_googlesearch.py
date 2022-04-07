@@ -8,10 +8,15 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 print("Test case started")
 driver.maximize_window()
 driver.get("https://www.google.com/")
-driver.find_element_by_name("q").send_keys("Harman")  #to searh a  word in google
+driver.find_element_by_name("q").send_keys("Harman") #to searh a  word in google
+time.sleep(1)
+driver.find_element_by_name("btnk").click()
+
 time.sleep(5)   #time is given to hold for 5 sec
 driver.close()
 print("testcase successfully completed")
+
+
 
 
 
